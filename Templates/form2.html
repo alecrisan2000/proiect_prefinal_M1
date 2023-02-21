@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employees</title>
+</head>
+<body>
+
+	<form action="{{ url_for('get_employees_year')}}" method="post">
+	<label for="an">Angajatul trebuie sa aiba vechimea de:</label>
+	<input type="number" id="an" name="an" placeholder="ani">
+	<button type="submit">Cauta</button>
+	</form>
+
+</body>
+</html>

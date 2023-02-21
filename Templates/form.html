@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employees</title>
+</head>
+<body>
+
+	<form action="{{ url_for('get_employees_dep')}}" method="post">
+	<label for="departament">Departament:</label>
+	<input type="text" id="departament" name="dep" placeholder="departament">
+	<button type="submit">Cauta</button>
+	</form>
+
+</body>
+</html>

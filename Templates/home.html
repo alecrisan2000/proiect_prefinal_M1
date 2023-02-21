@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Proiectul nostru Prefinal</h1>
+
+    <form action="{{ url_for('get_employees') }}" method="get">
+      <button type="submit">Vizualizare angajati</button>
+    </form>
+
+    <form action="{{ url_for('get_employees_dep') }}" method="get">
+      <button type="submit">Vizualizare angajati din departament</button>
+    </form>
+
+     <form action="{{ url_for('get_average_salary') }}" method="get">
+      <button type="submit">Afisare medie salariala</button>
+     </form>
+
+  <form action="{{ url_for('get_employees_per_dep') }}" method="get">
+      <button type="submit">Afisare nr angajati/departament</button>
+     </form>
+
+    <form action="{{ url_for('get_employees_year') }}" method="get">
+      <button type="submit">Afisare nr de angajati cu vechime mai mare de x ani</button>
+     </form>
+
+  </body>
+</html>

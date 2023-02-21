@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employees</title>
+</head>
+<body>
+	<h1>Lista Angajati</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Departament</th>
+				<th>Nume</th>
+				<th>Functie</th>
+				<th>Data Angajarii</th>
+				<th>Salariu</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for employee in employees %}
+			<tr>
+				<td>{{ employee.Departament }}</td>
+				<td>{{ employee.Nume }}</td>
+				<td>{{ employee.Functie }}</td>
+				<td>{{ employee.Data_Angajarii.date() }}</td>
+				<td>{{ employee.Salariu }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+     <form action="{{ url_for('home') }}" method="get">
+      <button type="submit">Home</button>
+     </form>
+
+</body>
+</html>
